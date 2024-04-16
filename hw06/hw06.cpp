@@ -133,7 +133,7 @@ class BigUnsigned{
           }
 
           explicit operator bool() const{
-               return numArr[0] != 0;
+               return numArr[0] != 0 || numArr.size() > 1;
           }
      
      private:
@@ -158,8 +158,6 @@ class BigUnsigned{
 // non-member function prototypes
 // + operator overloading for BigUnsigned
 BigUnsigned operator+(const BigUnsigned& lhs, const BigUnsigned& rhs);
-// operator - overloading for BigUnsigned
-BigUnsigned operator-(const BigUnsigned& lhs, const BigUnsigned& rhs);
 // operator> overloading for BigUnsigned
 bool operator>(const BigUnsigned& lhs, const BigUnsigned& rhs);
 // operator>= overloading for BigUnsigned
