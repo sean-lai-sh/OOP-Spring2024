@@ -116,8 +116,9 @@ namespace WarriorCraft{
         }
         // Check if the servant is in the army and remove it
         if(removeProtector(servant)){
-            cout << servant.getName() << ", 
-            you don't work for me anymore ! -- " << getName() << endl;
+            cout << servant.getName() << 
+            ", you don't work for me anymore ! -- " 
+            << getName() << endl;
             return true;
         }
         cout << getName() << " failed to fire " << servant.getName() << endl;
